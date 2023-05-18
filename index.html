@@ -1,0 +1,131 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+*
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <nav> 
+        
+        <a href="#About">About Me</a>
+        <a href="#Happy">Keep Me Happy</a>
+        <a href="#Sad!">Dont Make Me Sad</a>
+        <a href="#Contact">To Book</a>
+        <a href="#Warning">Disclaimer</a>
+      
+      </nav>
+      <title>Taika Hunt</title>
+      <style>
+        img {
+          max-width: 40%;
+        }
+        .footer {
+       left: 0;
+        bottom: 0;
+         width: 100%;
+         background-color: darkred;
+         color: white;
+        text-align: center;
+        }
+        a {
+          margin: 10px;
+        }
+}
+        
+      </style>
+    </head>
+    <body>
+      <h1>Taika Kuliaikanuu Hunt</h1>
+      <div class="container"></div>
+      <figure>
+        <img src="https://lh3.googleusercontent.com/gtkN_c42l5j-h5YXTAQMGIV84Bd0d6SBz60ry4SrpLb4oAwq-DEadrur_QjT30zU6WVv6ZD_JUGqn6DzipgzaI2ONkFzI22_cHQWlaIt" alt="My Little Baby">
+        <figcaption>Learning to roll over!</figcaption>
+      </figure>
+    </div>
+      <section>
+      <h2>About Me</h2>
+      <p>Taika was born on October 29, 2022, which is also the same day as his dogs birthday! The name "Taika" comes from the Maori culture; which means "Tiger". Kuliaikanuu is his middle name; which means "Strive to reach the highest" in hawaiian.
+        Born in Washington, but his ethnicity makes up of half white and half islander, in hawaiian words: "Hapa".
+        He is currently living his life with his parents and growing so incredibly fast. He has a super power of making people loving him with just one look.
+      </section>
+      <section>
+        <h3>Things that make me Happy! </h3>
+        <p>There are many things that put a smile on my face, here is a few:</p>
+        <ul>
+          <li>Making Mama and Papa dance around to make me stop crying.</li>
+          <li>Eating and then watching Blues Clues/Miss Rachel while I lay on the ground drinking water.</li>
+          <li>Listening to Rock music and Hawaiian music.</li>
+          <li>Listening to Papa beatbox/rap and Mama Sing/Rap</li>
+          <li>Mainly, when I laugh and smile so does everyone else.</li>
+        </ul>
+        <p>And the list can go on and on!</p>
+      </section>
+       
+      <section>
+        <h3>Things that make me sad!</h3>
+        <p>This is very important to know!</p>
+        <ul> 
+          <li>Sweet Peas (A'ole!)</li>
+          <li>Being overtickled</li>
+          <li>Cold Milk</li>
+          <li>Country Music</li>
+        </ul>
+      </section>
+      <section>
+        <h1>To Book me for Modeling, etc...</h1>
+        <div class="container">
+          <form action="action_page.php">
+        
+            <label for="Cname">Company Name</label>
+            <input type="text" id="Cname" name="Company Name" placeholder="Company Name">
+        
+            <label for="Aname">Agent Name</label>
+            <input type="text" id="Aname" name="Agentname" placeholder="Agent Name">
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Description of Gig" style="height: 50px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+        </div>
+      </section>
+      <section>
+      <div class="footer">
+        <h2>!WARNING!</h2>
+        <p>I WILL MELT YOUR HEART</p>
+      </div>
+    </section>
+
+      
+    </body>
+    </html>
